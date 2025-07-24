@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+    --brand-color1: #12F7D6;
+    --brand-color2: #98FAEC;
+    --color-white: #FFFFFF;
+    --bg1-color: #292F36;
+    --bg2-color: #1A1E23;
+    --css-color: #0C73B8;
+    --gray-color: #43454D;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+ul{
+    list-style: none;
+}
+.container{
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+/*Small*/
+@media (min-width: 768px){
+    .container{
+        width: 750px;
+    }
+}
+/*Medium*/
+@media (min-width: 992px){
+    .container{
+        width: 970px;
+    }
+}
+/*Large*/
+@media (min-width: 1200px){
+    .container{
+        width: 1170px;
+    }
+}
+/*End Global Rules*/

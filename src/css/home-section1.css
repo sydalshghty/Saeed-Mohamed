@@ -1,0 +1,170 @@
+.homeContent-Departament{
+    height: 910px;
+}
+.homeContent-Departament .container{
+    width: 100%;
+    height: 100%;
+}
+.homeContent-Departament .container .developer-col .account-col{
+    width: 64px;
+    height: 376px;
+    border: 1px solid var(--color-white);
+}
+.homeContent-Departament .container .developer-col .heading-developer img{
+    width: 552px;
+    height: 134px;
+}
+.homeContent-Departament .container .content-col{
+    margin-top: -280px;
+}
+.homeContent-Departament .container .content-col .content-information{
+    min-width: 340px;
+    height: 520px;
+    border: 3px solid var(--color-white);
+    border-top-left-radius: 40%;
+    border-bottom-right-radius: 40%;
+    outline: 3px solid var(--brand-color1);
+}
+.homeContent-Departament .container .content-col .content-information .col-person h2{
+    font-size: 27px;
+    text-transform: capitalize;
+}
+.homeContent-Departament .container .content-col .content-information .col-person h4{
+    text-transform: capitalize;
+}
+.homeContent-Departament .container .content-col .content-information .content-social img{
+    cursor: pointer;
+}
+.homeContent-Departament .container .content-col .content-information .download-CV{
+    width: 227px;
+    height: 56px;
+}
+.homeContent-Departament .container .content-col .content-information .download-CV a{
+    text-decoration: none;
+}
+.homeContent-Departament .container .content-col .content-text .col-heading{
+    width: 500px;
+}
+.homeContent-Departament .container .content-col .content-text .col-heading .span-h1,
+.homeContent-Departament .container .content-col .content-text .col-paragraph span{
+    color: var(--brand-color2);
+    font-size: 15px
+}
+.homeContent-Departament .container .content-col .content-text .col-heading .span-name{
+    color: var(--brand-color2);
+    text-transform: capitalize;
+}
+.homeContent-Departament .container .content-col .content-text .col-heading .span-h1:last-child{
+    margin-top: 10px;
+    margin-left: 15px;
+}
+.homeContent-Departament .container .content-col .content-text .col-email .link-email{
+    text-decoration: none;
+    letter-spacing: 0.5px;
+}
+.homeContent-Departament .container .content-col .content-text .col-email .link-email::before,
+.homeContent-Departament .container .content-col .content-text .col-email .link-email::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 0%;
+    height: 1px;
+    background-color: var(--color-white);
+    transition: width 0.5s ease;
+}
+.homeContent-Departament .container .content-col .content-text .col-email .link-email:hover::before,
+.homeContent-Departament .container .content-col .content-text .col-email .link-email:hover::after{
+    width: 50%;
+}
+.homeContent-Departament .container .content-col .content-text .col-email .link-email::before{
+    left: 50%;
+}
+.homeContent-Departament .container .content-col .content-text .col-email .link-email::after{
+    right: 50%;
+}
+.homeContent-Departament .container .content-col .content-programming{
+   min-width: 220px; 
+    height: 320px;
+    border-radius: 80px;
+}
+.homeContent-Departament .container .content-col .content-programming .col-div p{
+    color: var(--color-white);
+    letter-spacing: 0.5px;
+    font-size: 15px;
+}
+@media (max-width: 1350px){
+    .homeContent-Departament{
+     height: 1300px;
+    }
+    .homeContent-Departament .container .content-col{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 0px;
+    }
+}
+@media (max-width: 1100px){
+    .homeContent-Departament{
+        height: 1700px;
+    }
+    .homeContent-Departament .container .content-col .col-Text-Programming{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .homeContent-Departament .container .content-col .col-Text-Programming .content-programming{
+        width: fit-content;
+    }
+}
+@media (max-width: 992px){
+    .homeContent-Departament .container .developer-col .heading-developer img{
+        width: 400px;
+    }
+}
+@media (max-width: 768px){
+    .homeContent-Departament{
+        margin-top: -30px;
+    }
+     .homeContent-Departament .container{
+        padding: 64px 24px;
+    }
+    .homeContent-Departament .container .developer-col .heading-developer img{
+        width: 300px;
+    }
+    .homeContent-Departament .container .content-col .content-information{
+        min-width: 250px;
+        height: 520px;
+        margin-left: 40px;
+    }
+    .homeContent-Departament .container .content-col .col-heading{
+        width: 100%;
+    }
+    .homeContent-Departament .container .content-col .content-text{
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+@media (max-width: 600px){
+    .homeContent-Departament{
+        height: 1500px;
+    }
+    .homeContent-Departament .container{
+        padding-top: 280px;
+    }
+    .homeContent-Departament .container .content-col .content-information{
+        margin-left: 0px;
+    }
+    .homeContent-Departament .container .content-col .col-Text-Programming .col-heading h1{
+        font-size: 20px;
+    }
+    .homeContent-Departament .container .developer-col{
+        display: none;
+    }
+}
+@media (max-width: 450px){
+    .homeContent-Departament .container .content-col .content-information{
+        max-width: 300px;
+    }
+}
