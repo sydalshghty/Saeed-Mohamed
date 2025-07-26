@@ -1,0 +1,100 @@
+.skills-departament{
+    height: 980px;
+}
+.skills-departament .container .col-skills .skills-Title .col-title .img-title,
+.skills-departament .container .col-skills .skills-Title .col-title .img-line{
+    width: fit-content;
+    height: 100%;
+}
+.skills-departament .container .col-skills .img-tag{
+    position: absolute;
+    width: 225px;
+    height: 193px;
+    right: 17%;
+    top: 0;
+}
+.skills-departament .container .content-Development .web-development,
+.skills-departament .container .content-Development .app-development{
+    border-left: 6px solid var(--css-color);
+    margin-right: 128px;
+}
+.skills-departament .container .content-Development .app-development{
+    margin-right: 0;
+}
+
+.skills-departament .container .content-Development .web-development h3,
+.skills-departament .container .content-Development .app-development h3{
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.5px;
+    text-transform: capitalize;
+}
+.skills-departament .container .content-Development .web-development p,
+.skills-departament .container .content-Development .app-development p{
+    letter-spacing: 0.5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.skills-departament .container .content-skills .col-img:last-child{
+    margin-right: 0;
+}
+.skills-departament .container .content-skills .col-img img{
+    width: fit-content;
+    height: 100%;
+}
+.skills-departament .container .content-skills .col-img img:first-child{
+    margin-bottom: 20px;
+}
+@media (max-width: 1200px){
+    .skills-departament .container .content-skills .col-img,
+    .skills-departament .container .content-skills .Html-Css{
+        margin-right: 100px;
+    }
+    .skills-departament .container .col-skills .img-tag{
+        right: 40px;
+    }
+}
+@media (max-width: 992px){
+    .skills-departament{
+        height: 990px;
+    }
+    .skills-departament .container .content-skills{
+        flex-direction: column;
+    }
+    .skills-departament .container .content-skills .Html-Css{
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .skills-departament .container .content-Development .web-development{
+        margin-right: 64px;
+    }
+    .skills-departament .container .col-skills .skills-Title .img-scroll,
+    .skills-departament .container .col-skills .img-tag{
+        display: none;
+    }
+    .skills-departament .container .content-skills{
+        flex-wrap: wrap;
+    } 
+}
+@media (max-width: 768px){
+    .skills-departament{
+        height: 1110px;
+    }
+    .skills-departament .container .content-Development{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .skills-departament .container .content-Development .web-development{
+        margin-bottom: 40px;
+        margin-right: 0;
+    }
+    .skills-departament .container .content-skills .Html-Css img:first-child,
+    .skills-departament .container .content-skills .JS-React img:first-child{
+        width: 112px;
+        height: 112px;
+    }
+}
+@media (max-width: 600px){
+    .skills-departament .container .col-skills .skills-Title .col-title p{
+        text-align: center;
+    }
+}

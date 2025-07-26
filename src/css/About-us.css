@@ -101,9 +101,6 @@
      }
 }
 @media (max-width: 650px){
-    .about-departament{
-        margin-bottom: 300px;
-    }
     .about-departament .container .content-Aboutme .col-image{
         margin-top: -10px;
     }

@@ -9,6 +9,10 @@ import { motion } from "framer-motion";
 
 function AboutUs(){
     const { ref, inView } = useInView({ triggerOnce: true });
+    const [titleRef, titleInView] = useInView({ triggerOnce: true });
+    const [headingRef, headingInView] = useInView({ triggerOnce: true });
+    const [infoRef, infoInView] = useInView({ triggerOnce: true });
+    const [imageRef, imageInView] = useInView({ triggerOnce: true });
 
     const p1 = `<p>`;
     const p2 = `</p>`;
@@ -37,17 +41,17 @@ function AboutUs(){
                 <div className="content-Aboutme mt-20 flex w-full">
                     <div className="col-Aboutme">
                         <motion.div className="heading bg-bg1color text-center flex justify-center items-center mb-7"
-                            ref={ref}
+                            ref={titleRef}
                             initial={{ opacity: 0, y: 80 }}
-                            animate={inView ? { opacity: 1, y: 0 } : {}}
+                            animate={titleInView ? { opacity: 1, y: 0 } : {}}
                             transition={{ duration: 1, delay: 0.8}}
                         >
                             <h1 className="text-3xl text-white">About me</h1>
                         </motion.div>
                         <motion.div className="content-information bg-bg1color pt-6 pb-6 pl-10 pr-10 rounded-3xl mr-20"
-                            ref={ref}
+                            ref={headingRef}
                             initial={{ opacity: 0, y: 80 }}
-                            animate={inView ? { opacity: 1, y: 0 } : {}}
+                            animate={headingInView ? { opacity: 1, y: 0 } : {}}
                             transition={{ duration: 1, delay: 1.2 }}
                         >
                             <span className="span-p p-one pb-4">{p1}</span>
@@ -60,9 +64,9 @@ function AboutUs(){
                         </motion.div>
                     </div>
                     <motion.div className="col-image"
-                        ref={ref}
+                        ref={infoRef}
                         initial={{ opacity: 0, y: 80 }}
-                        animate={inView ? { opacity: 1, y: 0 } : {}}
+                        animate={ infoInView? { opacity: 1, y: 0 } : {}}
                         transition={{ duration: 1, delay: 1.5 }}
                     >
                         <img src={imgAbout} alt="About-me"/>
