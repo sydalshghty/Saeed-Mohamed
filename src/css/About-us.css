@@ -76,6 +76,10 @@
         width: 650px;
         height: 440px;
     }
+    .about-departament .container .content-Aboutme .col-image img{
+        width: 400px;
+        height: 400px;
+    }
 }
 @media (max-width: 768px){
     .about-departament{
