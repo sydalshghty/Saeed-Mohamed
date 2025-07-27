@@ -1,12 +1,12 @@
 import './index.css';
 import HomePage from './pages/Home-Page';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 function App() {
   return (
     <>
-    <BrowserRouter>
+    <HashRouter>
       <HomePage/>
-    </BrowserRouter>
+    </HashRouter>
     </>
   )
 }
