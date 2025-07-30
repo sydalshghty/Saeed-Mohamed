@@ -92,6 +92,13 @@
         width: 112px;
         height: 112px;
     }
+    .skills-departament .container .col-skills .skills-Title .col-title .img-title,
+    .skills-departament .container .col-skills .skills-Title .col-title .img-line{
+        width: 100px;
+    }
+    .skills-departament .container .col-skills .skills-Title .col-title p{
+        font-size: 13px;
+    }
 }
 @media (max-width: 600px){
     .skills-departament .container .col-skills .skills-Title .col-title p{

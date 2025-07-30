@@ -27,50 +27,50 @@ function SkillSContent(){
     const [reactRef, reactInView] = useInView({ triggerOnce: true });
 
     return(
-        <div className="skills-departament relative flex justify-center w-full">
-            <img className="skills-background absolute w-full h-full" src={backgroundSkills} alt="img-skills"/>
-            <div className="container w-full h-full pt-16 pb-16 absolute top-0">
-                <motion.div className="col-skills relative w-full"
+        <div className="relative flex justify-center w-full skills-departament">
+            <img className="absolute w-full h-full skills-background" src={backgroundSkills} alt="img-skills"/>
+            <div className="container absolute top-0 w-full h-full pt-16 pb-16">
+                <motion.div className="relative w-full col-skills"
                     ref={ref}
                     initial={{ opacity: 0, y: 80 }}
                     animate={inView ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 1, delay: 0.5 }}
                 >
-                    <div className="skills-Title w-full flex flex-col justify-center items-center">
-                        <img className="img-scroll mb-2" src={imgScroll} alt="img-Scroll"/>
-                        <div className="col-title flex flex-col justify-center items-center">
-                            <img className="img-title mb-2 pb-3" src={imgTitle} alt="img-Title"/>
-                            <img className="img-line mb-2 pb-3" src={imgLine22} alt="img-Line22"/>
+                    <div className="flex flex-col items-center justify-center w-full skills-Title">
+                        <img className="mb-2 img-scroll" src={imgScroll} alt="img-Scroll"/>
+                        <div className="flex flex-col items-center justify-center col-title">
+                            <img className="pb-3 mb-2 img-title" src={imgTitle}  alt="img-Title"/>
+                            <img className="pb-3 mb-2 img-line" src={imgLine22} alt="img-Line22"/>
                             <p className="text-white">I am striving to never stop learning and improving</p>
                         </div>
                     </div>
                     <img className="img-tag" src={imgTag} alt="img-skills"/>
                 </motion.div>
-                <div className="content-Development w-full flex justify-center mt-20">
-                    <motion.div className="web-development w-72 h-32 bg-brandcolor2 pt-4 pb-4 pl-6 pr-6 rounded-md text-center flex flex-col justify-center items-center"
+                <div className="flex justify-center w-full mt-20 content-Development">
+                    <motion.div className="flex flex-col items-center justify-center h-32 pt-4 pb-4 pl-6 pr-6 text-center rounded-md web-development w-72 bg-brandcolor2"
                         ref={titleRef}
                         initial={{ opacity: 0, y: 80 }}
                         animate={titleInView ? { opacity: 1, y: 0 } : {}}
                         transition={{ duration: 1, delay: 0.8 }}
                     >
                         <img src={imgWeb} alt="web-development" className="mb-1"/>
-                        <h3 className="text-xl font-medium mb-2">web developement</h3>
+                        <h3 className="mb-2 text-xl font-medium">web developement</h3>
                         <p className="text-base font-light">HTML·CSS·JS·REACT</p>
                     </motion.div>
-                    <motion.div className="app-development w-72 h-32 bg-brandcolor2 pt-4 pb-4 pl-6 pr-6 rounded-md text-center flex flex-col justify-center items-center"
+                    <motion.div className="flex flex-col items-center justify-center h-32 pt-4 pb-4 pl-6 pr-6 text-center rounded-md app-development w-72 bg-brandcolor2"
                         ref={headingRef}
                         initial={{ opacity: 0, y: 80 }}
                         animate={headingInView ? { opacity: 1, y: 0 } : {}}
                         transition={{ duration: 1, delay: 1.2 }}
                     >
                         <img src={imgApp} alt="app-development" className="mb-1"/>
-                        <h3 className="text-xl font-medium mb-2">App developement</h3>
+                        <h3 className="mb-2 text-xl font-medium">App developement</h3>
                         <p className="text-base font-light">React Native</p>
                     </motion.div>
                 </div>
-                <div className="content-skills w-full flex justify-center items-center mt-20">
-                    <div className="Html-Css flex mr-32">
-                        <motion.div className="col-img flex flex-col items-center mr-32"
+                <div className="flex items-center justify-center w-full mt-20 content-skills">
+                    <div className="flex mr-32 Html-Css">
+                        <motion.div className="flex flex-col items-center mr-32 col-img"
                             ref={htmlRef}
                             initial={{ opacity: 0, y: 80 }}
                             animate={htmlInView ? { opacity: 1, y: 0 } : {}}
@@ -79,7 +79,7 @@ function SkillSContent(){
                             <img src={imgHtml} alt="Html-Language"/>
                             <img src={HtmlText} alt="Html-Text"/>
                         </motion.div>
-                        <motion.div className="col-img flex flex-col items-center mr-32"
+                        <motion.div className="flex flex-col items-center mr-32 col-img"
                             ref={cssRef}
                             initial={{ opacity: 0, y: 80 }}
                             animate={cssInView ? { opacity: 1, y: 0 } : {}}
@@ -89,8 +89,8 @@ function SkillSContent(){
                             <img src={CSSText} alt="CSS-Text"/>
                         </motion.div>
                     </div>
-                    <div className="JS-React flex">
-                        <motion.div className="col-img flex flex-col items-center mr-32"
+                    <div className="flex JS-React">
+                        <motion.div className="flex flex-col items-center mr-32 col-img"
                             ref={jsRef}
                             initial={{ opacity: 0, y: 80 }}
                             animate={jsInView ? { opacity: 1, y: 0 } : {}}
@@ -99,7 +99,7 @@ function SkillSContent(){
                             <img src={imgJs} alt="JS-Language"/>
                             <img src={JsText} alt="JS-Text"/>
                         </motion.div>
-                        <motion.div className="col-img flex flex-col items-center mr-32"
+                        <motion.div className="flex flex-col items-center mr-32 col-img"
                             ref={reactRef}
                             initial={{ opacity: 0, y: 80 }}
                             animate={reactInView ? { opacity: 1, y: 0 } : {}}
