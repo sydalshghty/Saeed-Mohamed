@@ -108,6 +108,10 @@
     .about-departament .container .content-Aboutme .col-image{
         margin-top: -10px;
     }
+    .about-departament .container .content-Aboutme .col-image img{
+        width: 280px;
+        height: 280px;
+    }
     .about-departament .container .content-Aboutme .col-Aboutme .content-information{
         padding: 20px;
     } 
