@@ -3,6 +3,7 @@ import HomeSection1 from "../components/home-section1";
 import AboutUs from "../components/About-us";
 import SkillSContent from "../components/Skills-content";
 import WorksDepartament from "../components/works";
+import BlogsContentHome from "../components/blogs-Content-Home";
 function HomePage(){
     return(
         <>
@@ -11,6 +12,7 @@ function HomePage(){
             <AboutUs/>
             <SkillSContent/>
             <WorksDepartament/>
+            <BlogsContentHome/>
         </>
     )
 }

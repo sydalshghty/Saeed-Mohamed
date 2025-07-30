@@ -1,0 +1,171 @@
+.blogs-departament{
+    width: 100%;
+    max-height: 1080px;
+    position: relative;
+}
+.blogs-departament .img-background{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.blogs-departament .container{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 100px 128px;
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+}
+.blogs-departament .container .col-blogs{
+    margin-bottom: 20px;
+}
+.blogs-departament .container .col-blogs,
+.blogs-departament .container .col-blogs .blogs-title{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.blogs-departament .container .col-blogs .img-scroll{
+    width: fit-content;
+    margin-bottom: 30px;
+}
+.blogs-departament .container .col-blogs .blogs-title .img-title,
+.blogs-departament .container .col-blogs .blogs-title .img-line{
+    margin-bottom: 10px;
+}
+.blogs-departament .container .col-blogs .blogs-title p{
+    color: var(--color-white);
+}
+.blogs-departament .container .view-subscribe-buttons{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.blogs-departament .container .view-subscribe-buttons button{
+    position: relative;
+    width: 162px;
+    height: 56px;
+    padding: 16px 32px;
+    border-radius: 32px;
+    font-size: 17px;
+    font-family: 200;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+}
+.blogs-departament .container .view-subscribe-buttons .viewMore-btn{
+    background-color: var(--brand-color1);
+    border: none;
+    color: var(--bg1-color);
+    margin-right: 40px;
+    transition: background-color 0.7s ease, color 0.7s ease;
+    z-index: 1;
+}
+.blogs-departament .container .view-subscribe-buttons .viewMore-btn:hover{
+    background-color: var(--bg1-color);
+    color: var(--color-white);
+    border: 2px solid var(--brand-color1);
+}
+.blogs-departament .container .view-subscribe-buttons .subscribe-btn{
+    background-color: var(--bg1-color);
+    color: var(--color-white);
+    border: 2px solid var(--brand-color1);
+    transition: background-color 0.7s ease, color 0.7s ease;
+}
+.blogs-departament .container .view-subscribe-buttons .subscribe-btn:hover{
+    background-color: var(--brand-color1);
+    color: var(--bg1-color);
+}
+@media (max-width: 1100px){
+    .blogs-departament .container .web-developer .alldeveloper-content{
+        width: 900px;
+    }
+}
+@media (max-width: 992px){
+    .blogs-departament{
+        height: 780px;
+        overflow: hidden;
+    }
+    .blogs-departament .container{
+        padding: 64px 64px;
+    }
+    .blogs-departament .container .col-blogs .img-scroll{
+        display: none;
+    }
+    .blogs-departament .container .web-developer .img-webdeveloper{
+        width: 120px;
+        height: 120px;
+    }
+    .blogs-departament .container .web-developer .alldeveloper-content{
+        min-width: 100%;
+    }
+    .blogs-departament .container .web-developer .content-web-developer{
+        width: 100%;
+        margin-top: -24px;
+    }
+    .blogs-departament .container .web-developer .content-web-developer h2{
+        font-size: 27px;
+    }
+    .blogs-departament .container .web-developer .content-web-developer p{
+        font-size: 15px;
+        min-width: 100%;
+    }
+}
+@media (max-width: 880px){
+    .blogs-departament{
+        height: 800px;
+    }
+}
+@media (max-width: 768px){
+    .blogs-departament{
+        height: 900px;
+    }
+    .blogs-departament .container{
+        padding: 64px 24px;
+    }
+    .blogs-departament .container .col-blogs .blogs-title p{
+        text-align: center;
+        line-height: 1.6;
+    }
+    .blogs-departament .container .web-developer .content-web-developer .content-developer{
+        flex-direction: column;
+    }
+    .blogs-departament .container .web-developer .content-web-developer .content-developer .developer{
+        margin-bottom: 15px;
+    }
+    .blogs-departament .container .web-developer .content-web-developer .content-developer .col-text,
+    .blogs-departament .container .web-developer .content-web-developer .content-developer .col-date,
+    .blogs-departament .container .web-developer .content-web-developer .content-developer .col-read{
+        margin: 0px 15px;
+    }
+    .blogs-departament .container .web-developer .content-web-developer .content-developer .col-text{
+        margin: 0px 15px 0px 0px;
+    }
+    .blogs-departament .container .web-developer .content-web-developer h2{
+        font-size: 22px;
+    }
+}
+@media (max-width: 600px){
+    .blogs-departament{
+        height: 1050px;
+    }
+    .blogs-departament .container .web-developer{
+        min-width: 100%;
+    }
+    .blogs-departament .container .web-developer .alldeveloper-content{
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .blogs-departament .container .web-developer .alldeveloper-content .img-webdeveloper{
+        margin-bottom: 40px;
+        margin-right: 0px;
+    }
+}
