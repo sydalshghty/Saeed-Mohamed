@@ -77,7 +77,7 @@ function SkillSContent(){
                             transition={{ duration: 1, delay: 1.5 }}
                         >
                             <img src={imgHtml} alt="Html-Language"/>
-                            <img src={HtmlText} alt="Html-Text"/>
+                            <img src={HtmlText} alt="Html-Text" className="html-img"/>
                         </motion.div>
                         <motion.div className="flex flex-col items-center mr-32 col-img"
                             ref={cssRef}
@@ -86,7 +86,7 @@ function SkillSContent(){
                             transition={{ duration: 1, delay: 1.9 }}
                         >
                             <img src={imgCSS} alt="CSS-Language"/>
-                            <img src={CSSText} alt="CSS-Text"/>
+                            <img src={CSSText} alt="CSS-Text" className="css-img"/>
                         </motion.div>
                     </div>
                     <div className="flex JS-React">
@@ -97,7 +97,7 @@ function SkillSContent(){
                             transition={{ duration: 1, delay: 2.3 }}
                         >
                             <img src={imgJs} alt="JS-Language"/>
-                            <img src={JsText} alt="JS-Text"/>
+                            <img src={JsText} alt="JS-Text" className="js-img"/>
                         </motion.div>
                         <motion.div className="flex flex-col items-center mr-32 col-img"
                             ref={reactRef}
@@ -106,7 +106,7 @@ function SkillSContent(){
                             transition={{ duration: 1, delay: 2.7 }}
                         >
                             <img src={imgReact} alt="React-Language"/>
-                            <img src={ReactText} alt="React-Text"/>
+                            <img src={ReactText} alt="React-Text" className="react-img"/>
                         </motion.div>
                     </div>
                 </div>

@@ -104,4 +104,16 @@
     .skills-departament .container .col-skills .skills-Title .col-title p{
         text-align: center;
     }
+    .skills-departament .container .content-skills .Html-Css img:first-child,
+    .skills-departament .container .content-skills .JS-React img:first-child{
+        width: 80px;
+    }
+    .skills-departament .container .content-skills .Html-Css .html-img,
+    .skills-departament .container .content-skills .Html-Css .css-img,
+    .skills-departament .container .content-skills .JS-React .react-img{
+        width: 60px;
+    }
+    .skills-departament .container .content-skills .JS-React .js-img{
+        width: 50px;
+    }
 }
