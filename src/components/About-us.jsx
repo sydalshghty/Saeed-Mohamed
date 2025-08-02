@@ -18,29 +18,29 @@ function AboutUs(){
     const p2 = `</p>`;
 
     return(
-        <div className="about-departament relative w-full flex justify-center items-center overflow-hidden">
-            <div className="col-img absolute w-full h-full left-0 top-0 z-auto overflow-hidden">
-                <img className="img-background w-full h-full" src={imgBackground} alt="About-me"/>
+        <div className="relative flex items-center justify-center w-full overflow-hidden about-departament">
+            <div className="absolute top-0 left-0 z-auto w-full h-full overflow-hidden col-img">
+                <img className="w-full h-full img-background" src={imgBackground} alt="About-me"/>
             </div>
-            <div className="container w-full h-full pt-16 pb-16 absolute mt-16 z-50">
-                <motion.div className="col-Title w-full flex flex-col justify-center items-center"
+            <div className="container absolute z-50 w-full h-full pt-16 pb-16 mt-16">
+                <motion.div className="flex flex-col items-center justify-center w-full col-Title"
                     ref={ref}
                     initial={{ opacity: 0, y: 80 }}
                     animate={inView ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 1, delay: 0.5 }}
                 >
-                    <img className="scroll-img mb-2" src={scrollImg} alt="img-title"/>
+                    <img className="mb-2 scroll-img" src={scrollImg} alt="img-title"/>
                     <div className="content-Title">
-                        <div className="col w-full flex flex-col justify-center items-center">
-                            <img src={imgTitle} alt="img-Title" className="mb-2 pb-3"/>
-                            <img src={imgLine} alt="img-line" className="mb-2 pb-3"/>
+                        <div className="flex flex-col items-center justify-center w-full col">
+                            <img src={imgTitle} alt="img-Title" className="pb-3 mb-2"/>
+                            <img src={imgLine} alt="img-line" className="pb-3 mb-2"/>
                         </div>
                         <p className="text-white">I had the pleasure of working with these awesome Projects</p>
                     </div>
                 </motion.div>
-                <div className="content-Aboutme mt-20 flex w-full">
+                <div className="flex w-full mt-20 content-Aboutme">
                     <div className="col-Aboutme">
-                        <motion.div className="heading bg-bg1color text-center flex justify-center items-center mb-7"
+                        <motion.div className="flex items-center justify-center text-center heading bg-bg1color mb-7"
                             ref={titleRef}
                             initial={{ opacity: 0, y: 80 }}
                             animate={titleInView ? { opacity: 1, y: 0 } : {}}
@@ -48,18 +48,18 @@ function AboutUs(){
                         >
                             <h1 className="text-3xl text-white">About me</h1>
                         </motion.div>
-                        <motion.div className="content-information bg-bg1color pt-6 pb-6 pl-10 pr-10 rounded-3xl mr-20"
+                        <motion.div className="pt-3 pb-6 pl-10 pr-10 mr-20 content-information bg-bg1color rounded-3xl"
                             ref={headingRef}
                             initial={{ opacity: 0, y: 80 }}
                             animate={headingInView ? { opacity: 1, y: 0 } : {}}
                             transition={{ duration: 1, delay: 1.2 }}
                         >
-                            <span className="span-p p-one pb-4">{p1}</span>
-                            <h2 className="text-brandcolor1  mb-4">Hello!</h2>
-                            <p className="text-white mb-4">My name is Sinan and I specialize in web developement that utilizes <span>HTML</span>, <span>CSS</span>, <span>JS</span>, and <span>REACT</span> etc.</p>
-                            <p className="text-white mb-4">I am a highly motivated individual and eternal optimist dedicated to writing clear, concise, robust code that works. Striving to never stop learning and improving.</p>
-                            <p className="text-white mb-4">When I'm not coding, I am <span>writing bolgs</span>, reading, or picking up some new hands-on art project like <span>photography</span>.</p>
-                            <p className="text-white mb-4">I like to have my perspective and belief systems challenged so that I see the world through new eyes.</p>
+                            <span className="pb-4 span-p p-one">{p1}</span>
+                            <h2 className="mb-4 text-brandcolor1">Hello!</h2>
+                            <p className="mb-4 text-white">My name is Saeed and I specialize in web developement that utilizes <span>HTML</span>, <span>CSS</span>, <span>JS</span>, and <span>REACT Js</span>, <span>Tailwind Css</span>, <span>Redux</span>, <span>React-Redux</span>, <span>Redux-Toolkit</span>, <span>Git&Github </span>etc.</p>
+                            <p className="mb-4 text-white">I am a highly motivated individual and eternal optimist dedicated to writing clear, concise, robust code that works. Striving to never stop learning and improving.</p>
+                            <p className="mb-4 text-white">When I'm not coding, I am <span>writing bolgs</span>, reading, or picking up some new hands-on art project like <span>photography</span>.</p>
+                            <p className="mb-4 text-white">I like to have my perspective and belief systems challenged so that I see the world through new eyes.</p>
                             <span className="span-p">{p2}</span>
                         </motion.div>
                     </div>
