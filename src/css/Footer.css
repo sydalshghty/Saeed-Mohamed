@@ -149,3 +149,13 @@
         width: 35%;
     }
 }
+@media (max-width: 520px){
+     .footer-departament .container .col-right p{
+        width: 100%;
+        font-size: 13px;
+        margin: 0;
+        text-align: center;
+        margin-top: 5px;
+        margin-bottom: 5px;
+     }
+}
