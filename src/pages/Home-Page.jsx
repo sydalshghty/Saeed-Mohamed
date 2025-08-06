@@ -5,7 +5,7 @@ import SkillSContent from "../components/Skills-content";
 import WorksDepartament from "../components/works";
 import BlogsContentHome from "../components/blogs-Content-Home";
 import ContactUs from "../components/Contact-us";
-
+import Footer from "../components/Footer";
 function HomePage(){
     return(
         <>
@@ -16,6 +16,7 @@ function HomePage(){
             <WorksDepartament/>
             <BlogsContentHome/>
             <ContactUs/>
+            <Footer/>
         </>
     )
 }
