@@ -22,7 +22,7 @@ function WorksDepartament() {
     const { ref, inView } = useInView({ triggerOnce: true });
     const [titleRef, titleInView] = useInView({ triggerOnce: true });
 
-        const  settings = {
+    const settings = {
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -33,23 +33,23 @@ function WorksDepartament() {
         arrows: false
     };
 
-    const [sliderRef,setsliderRef] = useState(null);
+    const [sliderRef, setsliderRef] = useState(null);
 
     const goToPrev = () => {
-        if(sliderRef){
+        if (sliderRef) {
             sliderRef.slickPrev();
         }
     }
 
     const goToNext = () => {
-        if(sliderRef){
+        if (sliderRef) {
             sliderRef.slickNext();
         }
     }
 
-    return(
-        <div className="relative flex flex-col items-center justify-center w-full Works-Departament">
-            <img className="absolute w-full h-full works-background" src={WorksImg} alt="works"/>
+    return (
+        <div className="relative flex flex-col items-center justify-center w-full Works-Departament" id="Works">
+            <img className="absolute w-full h-full works-background" src={WorksImg} alt="works" />
             <div className="container w-full h-full pt-16 pb-16">
                 <motion.div className="flex flex-col items-center justify-center works-Title"
                     ref={ref}
@@ -57,10 +57,10 @@ function WorksDepartament() {
                     animate={inView ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 1, delay: 0.5 }}
                 >
-                    <img className="mb-2 scroll-img" src={ScrollImg} alt="Scroll-img"/>
+                    <img className="mb-2 scroll-img" src={ScrollImg} alt="Scroll-img" />
                     <div className="flex flex-col items-center justify-center col-title">
-                        <img src={TitleWorks} alt="heading-Works" className="mb-5 works-img"/>
-                        <img src={LineImg} alt="line-Works" className="mb-5 line-img"/>
+                        <img src={TitleWorks} alt="heading-Works" className="mb-5 works-img" />
+                        <img src={LineImg} alt="line-Works" className="mb-5 line-img" />
                         <p className="text-center text-white">I had the pleasure of working with these awesome projects</p>
                     </div>
                 </motion.div>
@@ -71,46 +71,46 @@ function WorksDepartament() {
                     transition={{ duration: 1, delay: 1 }}
                 >
                     <div className="absolute w-full cursor-pointer col-button">
-                        <img onClick={goToPrev} className="img-left" src={buttonLeft} alt="button-left"/>
-                        <img onClick={goToNext} className="img-right" src={buttonRight} alt="button-right"/>
+                        <img onClick={goToPrev} className="img-left" src={buttonLeft} alt="button-left" />
+                        <img onClick={goToNext} className="img-right" src={buttonRight} alt="button-right" />
                     </div>
                     <div className="all-projects">
-                            <Slider {...settings} ref={setsliderRef}>
-                                <div>
-                                    <div className="relative flex items-center justify-center w-full content-website">
-                                        <div className="view-website">
-                                            <Link to={"https://sydalshghty.github.io/e-commerce-app/"} target="_blank"
+                        <Slider {...settings} ref={setsliderRef}>
+                            <div>
+                                <div className="relative flex items-center justify-center w-full content-website">
+                                    <div className="view-website">
+                                        <Link to={"https://sydalshghty.github.io/e-commerce-app/"} target="_blank"
                                             className="relative pb-1 mr-1 text-lg font-light cursor-pointer text-brandcolor1"
-                                            >view Website</Link>
-                                            <img src={iconmouse} alt="img-mouse"/>
-                                        </div>
-                                        <div className="images-website">
-                                            <img className="dualScreen-img" src={dualScreen} alt="main-img"/>
-                                            <div className="col-img">
-                                                <img className="Coding-img" src={imgCoding} alt="img-coding"/>
-                                                <img className="Website-img" src={ExcluisveImg} alt="img-website"/>
-                                            </div>
+                                        >view Website</Link>
+                                        <img src={iconmouse} alt="img-mouse" />
+                                    </div>
+                                    <div className="images-website">
+                                        <img className="dualScreen-img" src={dualScreen} alt="main-img" />
+                                        <div className="col-img">
+                                            <img className="Coding-img" src={imgCoding} alt="img-coding" />
+                                            <img className="Website-img" src={ExcluisveImg} alt="img-website" />
                                         </div>
                                     </div>
                                 </div>
-                                <div>
-                                    <div className="relative flex items-center justify-center w-full content-website">
-                                        <div className="view-website">
-                                            <Link to={"https://sydalshghty.github.io/Project-HTML-And-CSS/"} target="_blank"
+                            </div>
+                            <div>
+                                <div className="relative flex items-center justify-center w-full content-website">
+                                    <div className="view-website">
+                                        <Link to={"https://sydalshghty.github.io/Project-HTML-And-CSS/"} target="_blank"
                                             className="relative pb-1 mr-1 text-lg font-light cursor-pointer text-brandcolor1"
-                                            >view Website</Link>
-                                            <img src={iconmouse} alt="img-mouse"/>
-                                        </div>
-                                        <div className="images-website">
-                                            <img className="dualScreen-img" src={dualScreen} alt="main-img"/>
-                                            <div className="col-img">
-                                                <img className="Coding-img" src={imgCoding} alt="img-coding"/>
-                                                <img className="Website-img" src={StaticWebsite} alt="img-website"/>
-                                            </div>
+                                        >view Website</Link>
+                                        <img src={iconmouse} alt="img-mouse" />
+                                    </div>
+                                    <div className="images-website">
+                                        <img className="dualScreen-img" src={dualScreen} alt="main-img" />
+                                        <div className="col-img">
+                                            <img className="Coding-img" src={imgCoding} alt="img-coding" />
+                                            <img className="Website-img" src={StaticWebsite} alt="img-website" />
                                         </div>
                                     </div>
                                 </div>
-                            </Slider>
+                            </div>
+                        </Slider>
                     </div>
                 </motion.div>
             </div>
