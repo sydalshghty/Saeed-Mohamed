@@ -153,6 +153,21 @@
     }
 }
 @media (max-width: 1300px){
+    .header-departament .container .col-logo h2{
+        font-size: 36px;
+    }
+    .header-departament .container .col-logo h3{
+        display: none;
+    }
+    .header-departament .container ul{
+        gap: 15px;
+    }
+    .header-departament .container ul li a{
+        font-size: 20px;
+    }
+    
+}
+@media (max-width: 900px){
     .header-departament .container ul{
         display: none;
     }

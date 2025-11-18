@@ -6,9 +6,13 @@ import { NavLink } from "react-router-dom";
 import { useRef, useState } from "react";
 import { Link } from "react-scroll";
 import { FaBars } from "react-icons/fa6";
+import { FaXmark } from "react-icons/fa6";
+import MenuMobile from "./Menu-nav-mobile";
 import "../css/header.css";
 
 function Header() {
+    const [showMenu, setShowMenu] = useState(false);
+    const [showBars, setShowBars] = useState(true);
     const logo = `<S/>`;
     const [appear, setAppear] = useState(false);
     const [xMark, setxMark] = useState(true);
@@ -109,13 +113,34 @@ function Header() {
                             </NavLink>
                             <NavLink className={"link text-base font-normal text-colorwhite transition-colors duration-75 text-center"} target="_blank" to={"https://github.com/sydalshghty"}>Github</NavLink>
                         </div>
-                        <FaBars className="flex items-center justify-center ml-5 text-xl text-center cursor-pointer bars-icon text-brandcolor1" />
+                        {showBars ?
+                            <FaBars className="flex items-center justify-center ml-5 text-xl text-center cursor-pointer bars-icon text-brandcolor1"
+                                onClick={() => {
+                                    setShowMenu(!showMenu);
+                                    setShowBars(!showBars);
+                                }}
+                            />
+                            :
+                            <FaXmark className="flex items-center justify-center ml-5 text-2xl text-center cursor-pointer bars-icon text-brandcolor1"
+                                onClick={() => {
+                                    setShowMenu(!showMenu);
+                                    setShowBars(!showBars);
+                                }}
+                            />
+                        }
                     </div>
                 </div>
             </div>
             <div className={`input-search ${appear ? "appearSearch" : ""}`}>
                 <input ref={inputRef} type="search" />
             </div>
+            {
+                showMenu ?
+                    <MenuMobile />
+                    :
+                    ""
+            }
+
         </>
     )
 }

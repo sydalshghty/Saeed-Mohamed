@@ -1,0 +1,24 @@
+.menu-mobile{
+    z-index: 1;
+}
+@media (min-width: 900px){
+    .menu-mobile{
+        display: none;
+    }
+}
+.menu-mobile{
+    margin-top: -20px;
+    min-height: 300px;
+    transition: height 0.5s ease;
+    position: relative;
+    z-index: 10000;
+}
+.menu-mobile ul li{
+    border-bottom: 1px solid rgb(117, 116, 116);
+    padding-left: 20px;
+    height: 50px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 18px;
+}
