@@ -168,6 +168,14 @@
     
 }
 @media (max-width: 900px){
+    .header-departament{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 60px;
+        z-index: 100;
+    }
     .header-departament .container ul{
         display: none;
     }
