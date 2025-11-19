@@ -9,25 +9,25 @@ import imgemail from "../assets/icon-mail1.svg";
 import iconMap from "../assets/icon-map-pin.svg";
 import imgWork from "../assets/icon-briefcase.svg";
 import imgLink from "../assets/icon-link.svg";
-import imgHtml from "../assets/HTML.svg";
-import imgCss from "../assets/CSS.svg";
-import imgJs from "../assets/JS.svg";
-import imgReact from "../assets/REACT.svg";
 import imgDownload from "../assets/icon-download.svg";
 import imgProfile from "../assets/Profile photo.svg";
 import { Link } from "react-router-dom";
 import buttonEmail from "../assets/Button.svg";
 import "../css/home-section1.css";
-//import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 
 function HomeSection1() {
-
-    /*  const { ref, inView } = useInView({ triggerOnce: true });
-      ref={ref}
-      initial={{ opacity: 0, y: 80 }}
-      animate={inView ? { opacity: 1, y: 0 } : {}}
-      transition={{ duration: 1 }}*/
+    const allSkills = [
+        { id: 1, skill: "html" },
+        { id: 2, skill: "css" },
+        { id: 3, skill: "tailwind css" },
+        { id: 4, skill: "js" },
+        { id: 5, skill: "react js" },
+        { id: 6, skill: "redux" },
+        { id: 7, skill: "react-redux" },
+        { id: 8, skill: "redux-toolkit" },
+        { id: 9, skill: "git & github" }
+    ]
 
     const h1 = `<h1>`;
     const h2 = `</h1>`;
@@ -43,30 +43,30 @@ function HomeSection1() {
                     transition={{ duration: 1 }}
                 >
                     <div className="flex flex-col items-center justify-between p-3 rounded-full account-col bg-bg2color ">
-                        <div className="flex items-center justify-center w-10 h-10 bg-white rounded-full cursor-pointer col-one">
-                            <img src={imgGrid} alt="icon-Grid" className="w-6 h-6 cursor-pointer" />
+                        <div className="flex items-center justify-center w-10 h-10 bg-white rounded-full col-one">
+                            <img src={imgGrid} alt="icon-Grid" className="w-6 h-6" />
                         </div>
                         <div>
-                            <img src={imgUser} alt="icon-User" className="w-6 h-6 cursor-pointer" />
+                            <img src={imgUser} alt="icon-User" className="w-6 h-6" />
                         </div>
                         <div>
-                            <img src={imgCode} alt="icon-Code" className="w-6 h-6 cursor-pointer" />
+                            <img src={imgCode} alt="icon-Code" className="w-6 h-6" />
                         </div>
                         <div>
-                            <img src={imgMonitor} alt="icon-Monitor" className="w-6 h-6 cursor-pointer" />
+                            <img src={imgMonitor} alt="icon-Monitor" className="w-6 h-6" />
                         </div>
                         <div>
-                            <img src={imgEdit} alt="icon-Edit" className="w-6 h-6 cursor-pointer" />
+                            <img src={imgEdit} alt="icon-Edit" className="w-6 h-6" />
                         </div>
                         <div>
-                            <img src={imgEmail} alt="icon-Email" className="w-6 h-6 cursor-pointer" />
+                            <img src={imgEmail} alt="icon-Email" className="w-6 h-6" />
                         </div>
                     </div>
-                    <div className="flex justify-center w-full heading-developer">
+                    <div className="flex justify-center w-full gap-5 heading-developer">
                         <img src={imgdeveloper} />
                     </div>
                 </motion.div>
-                <div className="flex items-center justify-center w-full pt-16 pl-24 overflow-hidden content-col">
+                <div className="flex items-center justify-center w-full gap-10 pt-16 pl-24 overflow-hidden content-col">
                     <motion.div className="p-6 mt-5 content-information"
                         initial={{ opacity: 0, y: 80 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -89,30 +89,33 @@ function HomeSection1() {
                             </div>
                             <div className="flex items-center w-full mb-4">
                                 <img src={imgWork} alt="img-work" className="cursor-pointer" />
-                                <p className="ml-3 text-sm font-thin text-textColor">Full-time / Freelancer</p>
+                                <p className="ml-3 text-sm font-thin text-textColor">Full-time / Part-time / Freelancer</p>
                             </div>
                             <div className="flex items-center w-full mb-4">
                                 <img src={imgLink} alt="img-link" className="cursor-pointer" />
-                                <Link to={"www.saeedmohamed.com"} className="ml-3 text-sm font-thin text-textColor">www.saeedmohamed.com</Link>
+                                <Link to={"https://sydalshghty.github.io/Saeed-Mohamed/"} target="_blank" className="ml-3 text-sm font-thin text-textColor">www.saeedmohamed.com</Link>
                             </div>
                         </div>
-                        <div className="flex mb-8 content-skills">
-                            <img src={imgHtml} alt="img-Html" className="mr-5" />
-                            <img src={imgCss} alt="img-Css" className="mr-5" />
-                            <img src={imgJs} alt="img-Js" className="mr-5" />
-                            <img src={imgReact} alt="img-React" className="mr-5" />
+                        <div className="flex flex-wrap gap-2 mb-8 content-skills">
+                            {allSkills.map((skill, index) => {
+                                return (
+                                    <div className="flex items-center justify-center pt-1 pb-1 pl-2 pr-2 rounded-lg bg-brandcolor1 col-skills w-fit h-fit" key={skill.id}>
+                                        <p className="text-xs uppercase">{skill.skill}</p>
+                                    </div>
+                                )
+                            })}
                         </div>
-                        <div className="flex items-center justify-center transition-colors duration-200 bg-white rounded-full cursor-pointer download-CV hover:bg-brandcolor1 hover:text-white">
+                        <div className="flex items-center justify-center w-full transition-colors duration-200 bg-white rounded-full cursor-pointer download-CV hover:bg-brandcolor1 hover:text-white">
                             <Link target="_blank"
-                                to={"https://drive.google.com/file/d/19MBjhA1nGhRmpwOmfpaa9fC-Zv5mXfQB/view?usp=sharing"}
+                                to={"https://drive.google.com/file/d/1hkEVH7grQYEQa55hg8U3ixtBppylrLwd/view?usp=sharing"}
                                 className="mr-3 text-lg font-medium text-bg1color"
                             >Download CV</Link>
-                            <Link target="_blank" to={"https://drive.google.com/file/d/19MBjhA1nGhRmpwOmfpaa9fC-Zv5mXfQB/view?usp=sharing"}>
+                            <Link target="_blank" to={"https://drive.google.com/file/d/1hkEVH7grQYEQa55hg8U3ixtBppylrLwd/view?usp=sharing"}>
                                 <img src={imgDownload} alt="download" className="cursor-pointer" />
                             </Link>
                         </div>
                     </motion.div>
-                    <div className="flex col-Text-Programming">
+                    <div className="flex gap-10 col-Text-Programming">
                         <motion.div className="ml-10 mr-10 content-text mt-14 mb-14"
                             initial={{ opacity: 0, y: 80 }}
                             animate={{ opacity: 1, y: 0 }}
@@ -123,7 +126,7 @@ function HomeSection1() {
                                 <h1 className="ml-5 text-3xl text-white">Hey</h1>
                                 <h1 className="ml-5 text-3xl text-white">I’m <span className="span-name">saeed</span>,</h1>
                                 <div className="flex items-center">
-                                    <h1 className="ml-5 text-3xl text-white">Front-End Developer</h1>
+                                    <h1 className="ml-5 text-3xl text-white">Front-End-Developer</h1>
                                     <span className="text-base span-h1 text-brandcolor2">{h2}</span>
                                 </div>
                             </div>
