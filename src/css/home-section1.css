@@ -130,12 +130,13 @@
     .homeContent-Departament{
         margin-top: -60px;
     }
-    .homeContent-Departament .container .content-col .col-Text-Programming .content-programming{
+/*    .homeContent-Departament .container .content-col .col-Text-Programming .content-programming{
         display: none;
-    }
+    }*/
 }
 @media (max-width: 768px){
     .homeContent-Departament{
+        height: 100%;
         margin-top: -50px;
     }
      .homeContent-Departament .container{
@@ -160,9 +161,9 @@
 }
 
 @media (max-width: 600px){
-     .homeContent-Departament{
-        height: 100vh;
-    }
+  /*   .homeContent-Departament{
+        height: 130vh;
+    }*/
     .homeContent-Departament .container{
         padding-top: 280px;
     }
@@ -177,18 +178,15 @@
         display: none;
     }
 }
-@media (max-width: 520px){
-     .homeContent-Departament{
-        height: 140vh;
-    }
+@media (max-width: 480px){
     .homeContent-Departament .container .content-col .content-information{
         max-width: 300px;
     }
-}
+}/*
 @media (max-width: 420px){
     .homeContent-Departament{
         height: 155vh;
     }
-}
+}*/
 
 
