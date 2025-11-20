@@ -14,7 +14,8 @@ export default {
         bg2color: "#1A1E23",
         csscolor: "#0C73B8",
         graycolor: "#43454D",
-        textColor: "#ddd"
+        textColor: "#ddd",
+        htmlColor: "#E54F26"
       }
     },
   },

@@ -1,12 +1,14 @@
 .about-departament{
-    height: 1200px;
+    height: 1100px;
 }
 .about-departament .container{
-    width: 100%;
+    padding: 20px;
+    min-width: 100%;
     height: 100%;
 }
 .about-departament .container .col-Title .scroll-img{
     margin-bottom: 10px;
+    margin-top: 40px;
 }
 .about-departament .container .col-Title .content-Title{
     text-align: center;
@@ -46,11 +48,11 @@
 }
 .about-departament .container .content-Aboutme .col-image img{
    width: 100%;
-    height: 100%;
+    height: 420px;
 }
-@media (max-width: 1520px){
+@media (max-width: 1300px){
     .about-departament{
-        height: 1800px;
+        height: 1600px;
     }
     .about-departament .container .content-Aboutme{
         flex-direction: column;
@@ -61,13 +63,16 @@
         margin-right: 0px;
         margin-bottom: 60px;
     }
+    .about-departament .container .content-Aboutme .col-image{
+     margin-top: 20px;
+    }
 }
 @media (max-width: 992px){
     .about-departament{
-        height: 1350px;
+        height: 1650px;
     }
     .about-departament .container .col-Title{
-        display: none;
+        margin-bottom: 40px;
     }
     .about-departament .container .content-Aboutme{
         margin-top: 0px;
@@ -76,14 +81,10 @@
         width: 650px;
         height: 440px;
     }
-    .about-departament .container .content-Aboutme .col-image img{
-        width: 400px;
-        height: 400px;
-    }
 }
 @media (max-width: 768px){
     .about-departament{
-        height: 1280px;
+        height: 1600px;
     }
     .about-departament .container .content-Aboutme .col-Aboutme .heading{
         width: 224px;
@@ -96,25 +97,21 @@
         width: 100%;
         height: fit-content;
     }
-    .about-departament .container .content-Aboutme .col-image img{
-        width: 300px;
-         height: 364px;
-     }
 }
 @media (max-width: 650px){
     .about-departament .container .content-Aboutme .col-image{
         margin-top: -10px;
     }
-    .about-departament .container .content-Aboutme .col-image img{
-        width: 280px;
-        height: 280px;
-    }
     .about-departament .container .content-Aboutme .col-Aboutme .content-information{
         padding: 20px;
     } 
 }
-@media (max-width: 450px){
+@media (max-width: 520px){
     .about-departament{
-        height: 1280px;
+        height: 1800px;
+    }
+  .about-departament .container .content-Aboutme .col-image img{
+        width: 100%;
+        height: 100%;
     }
 }

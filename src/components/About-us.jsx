@@ -1,6 +1,6 @@
 import imgBackground from "../assets/About me.png";
 import scrollImg from "../assets/Scroll.svg";
-import imgTitle from "../assets/Title.svg";
+//import imgTitle from "../assets/Title.svg";
 import imgLine from "../assets/Line 22.svg";
 import imgAbout from "../assets/About-us-image.png";
 import "../css/About-us.css";
@@ -12,7 +12,6 @@ function AboutUs() {
     const [titleRef, titleInView] = useInView({ triggerOnce: true });
     const [headingRef, headingInView] = useInView({ triggerOnce: true });
     const [infoRef, infoInView] = useInView({ triggerOnce: true });
-    const [imageRef, imageInView] = useInView({ triggerOnce: true });
 
     const p1 = `<p>`;
     const p2 = `</p>`;
@@ -20,7 +19,7 @@ function AboutUs() {
     return (
         <div className="relative flex items-center justify-center w-full overflow-hidden about-departament" id="About-me">
             <div className="absolute top-0 left-0 z-auto w-full h-full overflow-hidden col-img">
-                <img className="w-full h-full img-background" src={imgBackground} alt="About-me" />
+                <img className="object-cover w-full h-full img-background" src={imgBackground} alt="About-me" />
             </div>
             <div className="container absolute z-50 w-full h-full pt-16 pb-16 mt-16">
                 <motion.div className="flex flex-col items-center justify-center w-full col-Title"
@@ -32,13 +31,13 @@ function AboutUs() {
                     <img className="mb-2 scroll-img" src={scrollImg} alt="img-title" />
                     <div className="content-Title">
                         <div className="flex flex-col items-center justify-center w-full col">
-                            <img src={imgTitle} alt="img-Title" className="pb-3 mb-2" />
+                            <h1 className="mb-5 text-5xl uppercase text-brandcolor1">About me</h1>
                             <img src={imgLine} alt="img-line" className="pb-3 mb-2" />
                         </div>
                         <p className="text-white">I had the pleasure of working with these awesome Projects</p>
                     </div>
                 </motion.div>
-                <div className="flex w-full mt-20 content-Aboutme">
+                <div className="flex items-center justify-center w-full mt-20 content-Aboutme">
                     <div className="col-Aboutme">
                         <motion.div className="flex items-center justify-center text-center heading bg-bg1color mb-7"
                             ref={titleRef}
