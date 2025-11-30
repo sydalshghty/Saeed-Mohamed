@@ -165,6 +165,9 @@
     .homeContent-Departament .container .developer-col{
         display: none;
     }
+    .homeContent-Departament .profile-img{
+        display: none;
+    }
 }
 @media (max-width: 480px){
     .homeContent-Departament .container .content-col .content-information{

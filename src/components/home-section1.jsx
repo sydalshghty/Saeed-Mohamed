@@ -73,7 +73,7 @@ function HomeSection1() {
                         transition={{ duration: 1, delay: 0.6 }}
                     >
                         <div className="flex flex-col items-center justify-center w-full col-person mb-7">
-                            <img src={imgProfile} alt="developer" />
+                            <img src={imgProfile} alt="developer" className="profile-img" />
                             <h2 className="font-light text-white">saeed</h2>
                             <h4 className="text-lg font-light text-white">Front-End Developer</h4>
                         </div>
