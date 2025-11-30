@@ -82,7 +82,7 @@
 }
 @media (max-width: 768px){
     .skills-departament{
-        height: 1250px;
+        height: 1000px;
     }
     .skills-departament .container .content-Development{
         flex-direction: column;
@@ -114,5 +114,16 @@
     }
     .col-img h1{
         font-size: 17px;
+    }
+    .skills-departament .img-scroll{
+        display: none;
+    }
+     .skills-departament .container .col-skills .skills-Title .col-title .img-title{
+        width: 80px;
+     }
+}
+@media (max-width: 600px){
+    .skills-departament{
+        height: 1200px;
     }
 }

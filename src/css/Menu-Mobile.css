@@ -23,3 +23,9 @@
     align-items: center;
     font-size: 18px;
 }
+.menu-mobile ul li a{
+    transition: color 0.5s ease;
+}
+.menu-mobile ul li a:hover{
+    color: #12F7D6;
+}

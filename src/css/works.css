@@ -1,217 +1,72 @@
 .Works-Departament{
-    height: 950px;
+    height: 80vh;
 }
 .Works-Departament .container{
     position: absolute;
-    width: 100%;
+    min-width: 100%;
     height: 100%;
+    padding: 20px;
+    margin-top: 40px;
     z-index: 1;
 }
-.Works-Departament .container .works-content .col-button{
-    top: 45%;
-    padding: 0 128px;
-    z-index: 2000;
+.Works-Departament .container .all-projects{
+    margin-top: -100px !important;
 }
-@media (max-width: 1350px){
-    .Works-Departament .container .works-content .col-button{
-        padding: 0 80px;
-    }
+.Works-Departament .container .all-projects .col-project .left-btn,
+.Works-Departament .container .all-projects .col-project .right-btn{
+    background-color: #292F36;
+    transition: background-color 0.5s ease;
 }
-@media (max-width: 1250px){
-    .Works-Departament .container .works-content .col-button{
-        padding: 0 20px;
-    }
+.Works-Departament .container .all-projects .col-project .left-btn:hover,
+.Works-Departament .container .all-projects .col-project .right-btn:hover{
+    background-color: #3ed8c1;
 }
-@media (max-width: 1100px){
-    .Works-Departament .container .works-content .col-button{
-        padding: 0;
-    }
-    .Works-Departament .container .works-content .col-button .img-left,
-    .Works-Departament .container .works-content .col-button .img-right{
-        width: 60px;
-        height: 60px;
-    }
+.information-project{
+   width: 350px;
+   height: fit-content;
 }
-.Works-Departament .container .works-content .col-button .img-left{
-    float: left;
+.col-img-project{
+    background-color: #292F36;
+    padding: 10px;
+    border-radius: 12px;
+    height: 192px;
 }
-.Works-Departament .container .works-content .col-button .img-right{
-    float: right;
-}
-.Works-Departament .container .works-content .all-projects  .content-website .view-website{
-    position: absolute;
-    margin-left: 240px;
-    margin-top: -280px;
-    z-index: 1000;
-}
-.Works-Departament .container .works-content .all-projects .content-website .view-website a{
-    text-transform: capitalize;
-    letter-spacing: 0.8px;
-    border-bottom: 1px solid rgb(165, 163, 163);
-}
-.Works-Departament .container .works-content .all-projects .content-website .view-website img{
-    position: absolute;
-    top: 12px;
-    right: -20px;
-    cursor: pointer;
-}
-.Works-Departament .container .works-content .all-projects .content-website .images-website{
-    position: relative;
-}
-.Works-Departament .container .works-content .all-projects .content-website .images-website .Coding-img{
-    position: absolute;
-    left: -25.5px;
-    top: 55px;
-}
-.Works-Departament .container .works-content .all-projects .content-website .images-website .Website-img{
-    position: absolute;
-    left: 78px;
-    top: 130px;
-    min-width: 750px;
-    height: 180px;
-}
-.Works-Departament .container .works-content .all-projects .content-website .images-website .united-website{
-    left: 77px;
-    top: 132px;
-    max-width: 400px;
-    height: 191px;
-    padding-bottom: 20px;
-}
-@media (max-width: 992px){
-    .Works-Departament{
-        height: 700px;
-        overflow: hidden;
-    }
-    .Works-Departament .container{
-        padding: 64px 64px;
-    }
-    .Works-Departament .container .works-Title .scroll-img{
-        display: none;
-    }
-    .Works-Departament .container .works-content .all-projects{
-        margin-top: -20px;
-    }
-}
-@media (max-width: 820px){
-    .Works-Departament .container .works-content .all-projects  .content-website .view-website{
-        margin-left: 428px;
-    }
-}
-@media (max-width: 992px){
-    .Works-Departament{
-        height: 600px;
-    }
-    .Works-Departament .container{
-        padding: 64px 24px;
-    }
-    .Works-Departament .container .works-content .all-projects .content-website .images-website .dualScreen-img{
-        width: 450px;
-        height: 300px;
-        z-index: 10000;
-    }
-    .Works-Departament .container .works-content .all-projects .content-website .images-website .Coding-img{
-        left: -38.5px;
-        top: 38px;
-        width: 300px;
-        height: 320px;
-    }
-    .Works-Departament .container .works-content .all-projects .content-website .images-website .Website-img{
-        left: -62px;
-        top: 90px;
-        width: 100px;
-        height: 124px;
-    }
-    .Works-Departament .container .works-content .all-projects .content-website .images-website .united-website{
-        left: -62px;
-        top: 91px;
-        width: 100px;
-        height: 140px;
-    }
-    .Works-Departament .container .works-content .all-projects  .content-website .view-website{
-        margin-left: 150px;
-        margin-top: -210px;
-    }
-    .Works-Departament .container .works-content .all-projects  .content-website .view-website a{
-        font-size: 15px;
-    }
-    .Works-Departament .container .works-content .col-button{
-        padding: 0 80px;
-    }
-    .Works-Departament .container .works-content .col-button .img-left,
-    .Works-Departament .container .works-content .col-button .img-right{
-        width: 50px;
-        height: 50px;
-    }
+.view-website a{
+    border-bottom: 1px solid #12F7D6;
 }
 @media (max-width: 768px){
-    .Works-Departament .container .works-content .all-projects .content-website .images-website .united-website{
-        height: 139px;
+    .scroll-img{
+        display: none;
     }
-    .Works-Departament .container .works-content .col-button{
-        padding: 0 40px;
+    .projects-title{
+        font-size: 32px;
+        margin-top: 40px;
     }
-    .Works-Departament .container .works-Title .works-img,
-    .Works-Departament .container .works-Title .line-img{
-        width: 100px;
+    .content-project{
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: -40px;
     }
-    .Works-Departament .container .works-Title p{
-        font-size: 13px;
-    }
-}
-@media (max-width: 700px){
-    .Works-Departament .container .works-content .col-button{
-        padding: 0;
-    }
-}
-@media (max-width: 620px){
-    .Works-Departament{
-        height: 534px;
-    }
-    .Works-Departament .container .works-content .all-projects .content-website .images-website .dualScreen-img{
-        width: 300px;
-        height: 200px;
-        z-index: 10000;
-    }
-    .Works-Departament .container .works-content .all-projects .content-website .images-website .Coding-img{
-        left: -50.5px;
-        top: 25px;
-        width: 250px;
-        height: 213px;
-    }
-    .Works-Departament .container .works-content .all-projects .content-website .images-website .Website-img{
-        left: -166px;
-        top: 59px;
-        width: 80px;
-        height: 84px;
-    }
-    .Works-Departament .container .works-content .all-projects .content-website .images-website .united-website{
-        top: 60.9px;
-        width: 98px;
-        height: 99.5px;
-    }
-    .Works-Departament .container .works-content .all-projects  .content-website .view-website{
-        margin-left: 125px;
-        margin-top: -150px;
-    }
-    .Works-Departament .container .works-content .all-projects  .content-website .view-website a{
-        font-size: 13px;
-    }
-    .Works-Departament .container .works-content .col-button .img-left,
-    .Works-Departament .container .works-content .col-button .img-right{
-        width: 40px;
-        height: 40px;
+    .view-code-img{
+        height: 300px;
     }
 }
 @media (max-width: 450px){
-    .Works-Departament .container .works-content .col-button .img-left,
-    .Works-Departament .container .works-content .col-button .img-right{
-        width: 30px;
-        height: 30px;
+    .Works-Departament{
+        height: 110vh !important;
     }
-    .Works-Departament .container .works-content .col-button .img-left{
-        margin-left: -15px;
+    .Works-Departament .p-projects{
+        font-size: 12px;
     }
-    .Works-Departament .container .works-content .col-button .img-right{
-        margin-right: -15px;
+}
+@media (max-width: 400px){
+    .Works-Departament{
+        height: 130vh !important;
     }
+    .information-project{
+        width: 300px;
+    } 
+    .col-img-project{
+        height: 165px;
+    }  
 }

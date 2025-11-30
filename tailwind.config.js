@@ -15,7 +15,8 @@ export default {
         csscolor: "#0C73B8",
         graycolor: "#43454D",
         textColor: "#ddd",
-        htmlColor: "#E54F26"
+        htmlColor: "#E54F26",
+        bgButton: "#292F36"
       }
     },
   },

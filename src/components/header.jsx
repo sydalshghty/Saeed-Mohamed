@@ -38,42 +38,42 @@ function Header() {
                     </div>
                     <ul className="flex gap-5">
                         <li>
-                            <Link className="relative text-xl font-normal cursor-pointer text-brandcolor1"
+                            <Link className="relative text-xl font-normal cursor-pointer text-brandcolor1 active"
                                 to="Home"
                                 smooth={true}
                                 duration={500}
                             >Home</Link>
                         </li>
                         <li>
-                            <Link className="relative ml-4 text-2xl font-normal cursor-pointer text-colorwhite"
+                            <Link className="relative ml-4 text-2xl font-normal cursor-pointer text-colorwhite link"
                                 to="About-me"
                                 smooth={true}
                                 duration={500}
                             >About me</Link>
                         </li>
                         <li>
-                            <Link className="relative ml-4 text-2xl font-normal cursor-pointer text-colorwhite"
+                            <Link className="relative ml-4 text-2xl font-normal cursor-pointer text-colorwhite link"
                                 to="Skills"
                                 smooth={true}
                                 duration={500}
                             >Skills</Link>
                         </li>
                         <li>
-                            <Link className="relative ml-4 text-2xl font-normal cursor-pointer text-colorwhite"
+                            <Link className="relative ml-4 text-2xl font-normal cursor-pointer text-colorwhite link"
                                 to="Works"
                                 smooth={true}
                                 duration={500}
-                            >Works</Link>
+                            >Projects</Link>
                         </li>
                         <li>
-                            <Link className="relative ml-4 text-2xl font-normal cursor-pointer blogsLink text-colorwhite"
+                            <Link className="relative ml-4 text-2xl font-normal cursor-pointer blogsLink text-colorwhite link"
                                 to="Blogs"
                                 smooth={true}
                                 duration={500}
                             >Blogs</Link>
                         </li>
                         <li>
-                            <Link className="relative ml-4 text-2xl font-normal cursor-pointer blogsLink text-colorwhite"
+                            <Link className="relative ml-4 text-2xl font-normal cursor-pointer blogsLink text-colorwhite link"
                                 to="Contact"
                                 smooth={true}
                                 duration={500}

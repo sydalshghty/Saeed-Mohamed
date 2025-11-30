@@ -175,12 +175,13 @@
         width: 100%;
         height: 60px;
         z-index: 100;
+        background-color: #1A1E23;
     }
     .header-departament .container ul{
         display: none;
     }
     .header-departament .container::before{
-        bottom: -10px;
+        display: none;
     }
     .bars-icon{
         display: block;
@@ -202,4 +203,13 @@
      .bars-icon{
         margin-left: 10px;
      }
+}
+/*update changes*/
+.header-departament .container ul li a,
+.header-departament .container  .col-social a{
+    transition: color 0.5s ease;
+}
+.header-departament .container ul li a:hover,
+.header-departament .container  .col-social a:hover{
+    color: #12F7D6;
 }

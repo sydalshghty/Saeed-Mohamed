@@ -99,19 +99,31 @@
     }
 }
 @media (max-width: 650px){
+    .about-departament{
+        height: 1000px;
+    }
+    .about-departament .container .col-Title{
+        margin-top: 40px;
+    }
     .about-departament .container .content-Aboutme .col-image{
-        margin-top: -10px;
+        display: none;
     }
     .about-departament .container .content-Aboutme .col-Aboutme .content-information{
         padding: 20px;
     } 
 }
 @media (max-width: 520px){
+    .title-about{
+        font-size: 32px;
+    }
     .about-departament{
-        height: 1800px;
+        height: 1100px;
     }
   .about-departament .container .content-Aboutme .col-image img{
         width: 100%;
         height: 100%;
+    }
+    .about-departament .p-about{
+        font-size: 12px;
     }
 }

@@ -98,7 +98,7 @@
 }
 @media (max-width: 1350px){
     .homeContent-Departament{
-        height: calc(100vh + 60px);
+        height: calc(100vh + 200px);
     }
     .homeContent-Departament .container .content-col{
         display: flex;

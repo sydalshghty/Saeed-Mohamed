@@ -46,6 +46,9 @@
     }
 }
 @media (max-width: 768px){
+    .blogs-departament .container .col-blogs{
+        margin-top: 40px;
+    }
     .blogs-departament .container .col-blogs .blogs-title p{
         text-align: center;
         line-height: 1.6;
@@ -105,5 +108,12 @@
     }
     .blogs-departament .container .web-developer .content-web-developer .content-developer{
         display: none;
+    }
+    .blogs-departament .container .view-subscribe-buttons button{
+        width: 140px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }

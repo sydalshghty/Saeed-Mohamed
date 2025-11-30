@@ -31,10 +31,10 @@ function AboutUs() {
                     <img className="mb-2 scroll-img" src={scrollImg} alt="img-title" />
                     <div className="content-Title">
                         <div className="flex flex-col items-center justify-center w-full col">
-                            <h1 className="mb-5 text-5xl uppercase text-brandcolor1">About me</h1>
+                            <h1 className="mb-5 text-5xl uppercase text-brandcolor1 title-about">About me</h1>
                             <img src={imgLine} alt="img-line" className="pb-3 mb-2" />
                         </div>
-                        <p className="text-white">I had the pleasure of working with these awesome Projects</p>
+                        <p className="text-white p-about">I had the pleasure of working with these awesome Projects</p>
                     </div>
                 </motion.div>
                 <div className="flex items-center justify-center w-full mt-20 content-Aboutme">

@@ -6,17 +6,17 @@ import WorksDepartament from "../components/works";
 import BlogsContentHome from "../components/blogs-Content-Home";
 import ContactUs from "../components/Contact-us";
 import Footer from "../components/Footer";
-function HomePage(){
-    return(
+function HomePage() {
+    return (
         <>
-            <Header/>
-            <HomeSection1/>
-            <AboutUs/>
-            <SkillSContent/>
-            <WorksDepartament/>
-            <BlogsContentHome/>
-            <ContactUs/>
-            <Footer/>
+            <Header />
+            <HomeSection1 />
+            <AboutUs />
+            <SkillSContent />
+            <WorksDepartament />
+            <BlogsContentHome />
+            <ContactUs />
+            <Footer />
         </>
     )
 }
