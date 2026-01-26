@@ -1,9 +1,9 @@
 {
   "name": "my-personal-portofolio",
+  "homepage": "https://sydalshghty.github.io/Saeed-Mohamed",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://sydalshghty.github.io/Saeed-Mohamed",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
